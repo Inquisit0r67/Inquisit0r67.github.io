@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title }}</h2>
     <ul class="post-list">
-      {%- assign sorted_posts = site.posts | sort: 'name headline' | reverse %}
+      {%- assign sorted_posts = site.posts | sort: site.posts.title | reverse %}
       {%- for post in sorted_posts -%}
       <li>
             <h3>
