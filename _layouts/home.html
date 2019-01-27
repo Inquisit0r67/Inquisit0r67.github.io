@@ -1,3 +1,20 @@
 ---
 layout: default
 ---
+{% if site.pages.size > 0 %}
+    {% for webpage in site.pages %}
+        {% if webpage.title %}
+        {% if webpage.title != "About" %} 
+            <article class = "tiles">
+                <h3>
+                    <a href = "{{webpage.url}}">
+                        {{webpage.title}}
+                    </a>
+                </h3>
+            </article>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+    
