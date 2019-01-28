@@ -1,28 +1,28 @@
 ---
 layout: default
 ---
-{% if site.pages.size > 0 %}
-    {% for webpage in site.pages %}
-        {% if webpage.title %}
-        {% if webpage.title != "About" %} 
-            <nav class = "tiles">
-                <h3>
-                    <a href = "{{webpage.url}}">
-                        {{webpage.title}}
-                        <img src = "/images/{{webpage.title}}.jpg">
-                    </a>
-                </h3>
-            </nav>
-        {% endif %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
+<div id="page-content" aria-label="Content">
+    {% if site.pages.size > 0 %}
+        {% for webpage in site.pages %}
+            {% if webpage.title %}
+            {% if webpage.title != "About" %} 
+                <nav class = "tiles">
+                    <h3>
+                        <a href = "{{webpage.url}}">
+                            {{webpage.title}}
+                            <img src = "/images/{{webpage.title}}.jpg">
+                        </a>
+                    </h3>
+                </nav>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 
-<main class="page-content" aria-label="Content">
     <div class="wrapper">
       {{ content }}
     </div>
-</main>
+</div>
 
 
     
