@@ -18,6 +18,7 @@
   letter-spacing: 1px;
   margin-bottom: 0;
   float: left;
+  color: $grey-color-dark;
 
   &:hover{
     text-decoration: none;
@@ -142,6 +143,9 @@
   padding: 6px;
   margin:5px;
 
+  & a {
+    color: black;
+  }
   & a:hover{
     text-decoration: none;
   }
