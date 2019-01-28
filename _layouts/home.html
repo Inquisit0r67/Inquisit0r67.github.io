@@ -5,13 +5,14 @@ layout: default
     {% for webpage in site.pages %}
         {% if webpage.title %}
         {% if webpage.title != "About" %} 
-            <article class = "tiles">
+            <nav class = "tiles">
                 <h3>
                     <a href = "{{webpage.url}}">
                         {{webpage.title}}
+                        <img src = "/images/{{webpage.title}}.jpg">
                     </a>
                 </h3>
-            </article>
+            </nav>
         {% endif %}
         {% endif %}
     {% endfor %}
