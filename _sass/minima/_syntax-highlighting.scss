@@ -1,14 +1,14 @@
 /**
  * Syntax highlighting styles
  */
+.highlight code span {
+    color: #100505;
+}
+
 .highlight {
   background: #fff;
   @extend %vertical-rhythm;
  
-  .highlight code span {
-    color: #100505;
-  }
-
   .highlighter-rouge & {
     background: #eef;
   }
