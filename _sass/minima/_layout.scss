@@ -6,10 +6,12 @@
   border-bottom: 5px solid $grey-color-light;
   min-height: $spacing-unit * 2.5;
   background-color: $grey-color-dark;
+  transition: 0.2s;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
+
 
 .site-title {
   @include relative-font-size(3);
@@ -43,7 +45,7 @@
  */
 .site-footer-h-card {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: 0.4%;
   background-color: $grey-color-dark;
 }
 
@@ -69,12 +71,13 @@
  */
 
 .tiles {
-  width:200px;
-  height:200px;
+  width: 30%;
+  height: 30%;
   background: $grey-color-light;
-  float:left;
-  padding: 6px;
-  margin:5px;
+  float: left;
+  border-radius: 2%;
+  padding: 2%;
+  margin: 2%;
 
   & a {
     color: $grey-color-dark;
@@ -85,18 +88,19 @@
 }
 
 body {
-  background-image: url("/images/background.jpg");
-  background-repeat: repeat;
+  background-image: url("/images/background1.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-size: cover;
 }
 
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
-  width: 900px;
+  width: 45%;
   background-color: $grey-color;
   margin: auto auto;
+  border-color: $grey-color-light;
 }
 
 .page-heading {
